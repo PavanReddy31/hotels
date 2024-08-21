@@ -9,7 +9,8 @@ mongoose.connect(mongooseURL,{
     useUnifiedTopology:true,
     tls: true,
     tlsAllowInvalidCertificates: false,
-    tlsAllowInvalidHostnames: false
+    tlsAllowInvalidHostnames: false,
+    tlsInsecure: false
 });
 
 const db = mongoose.connection;
