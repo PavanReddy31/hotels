@@ -6,11 +6,8 @@ const mongooseURL = process.env.mongodb_URL;
 
 mongoose.connect(mongooseURL,{
     useNewUrlParser:true,
-    useUnifiedTopology:true,
-    tls: true,
-    tlsAllowInvalidCertificates: false,
-    tlsAllowInvalidHostnames: false,
-    tlsInsecure: false
+    useUnifiedTopology:true
+    
 });
 
 const db = mongoose.connection;
